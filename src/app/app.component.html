@@ -1,0 +1,57 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+
+
+
+<div style="text-align:left;">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <p>
+
+    This app idea directly copying by <a href="https://blog.angularindepth.com/keeping-browser-tabs-in-sync-using-localstorage-ngrx-and-rxjs-87de3bca4e2c" target="_blank">this</a> tutorial.
+ 
+  </p>
+  <p>
+    Question is; How do we keep multiple tab in sync?
+
+    With ngxs, localstorage and rxjs its possible.
+<br />
+    Tool;
+
+  </p>
+  <ul>
+    <li><strong>Ngxs</strong> for state management (Best state management library + pattern for Angular projects)</li>
+    <li><strong>localStorage</strong> for keeping actions</li>
+    <li>Rxjs for detecting changes on window.storage with <strong>fromEvent</strong> operator</li>
+  </ul>
+
+  <p>Steps;</p>
+    <ol>
+      <li>We're going to build some delightful form with ngxsForm</li>
+      <li>We re going to save our ACTION to localstorage</li>
+      <li>Listen to window.storage event with fromEvent operator</li>
+    </ol>
+
+    <p>
+      Result;
+    </p>
+    <ol>
+      <li>We can keep sync multiple tabs. We will change data in one tab, and another tab will update automatically.</li>
+    </ol>
+
+    <h1>EXAMPLES</h1>
+    <hr />
+    <h2>Login / Logout</h2>
+    <app-my-login></app-my-login>
+
+    <hr />
+
+      <h2>Address / Toast (Under construction)</h2>
+      <!--     <app-my-address></app-my-address>
+    --> 
+
+</div>
+</div>
+
+<router-outlet></router-outlet>
